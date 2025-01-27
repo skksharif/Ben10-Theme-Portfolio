@@ -1,11 +1,81 @@
 main {
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #000; /* Optional background color */
-  }
-  
+  width: 100vw;
+  height: 100vh;
+  background-color: #1ede00;
+}
+main section img{
+  width: 50px;
+  height: 50px;
+}
+main h1{
+  color: white;
+  font-size: 54px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px 0;
+}
+.power{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 25px;
+  padding: 20px 0;
+  width: 100%;
+  max-width: 1200px;
+}
+.power .item{
+  width: 250px;
+  height: 250px;
+  background: #fff;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+/* Adjust slider container styles */
+.slick-slider {
+  width: 100vw;
+}
+
+/* Styling for slider items */
+.slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 20px;
+  border: 1px solid #ddd;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slick-slide:hover {
+  transform: scale(1.05);
+}
+
+/* Remove default arrow styles and add custom alignment */
+.slick-prev, .slick-next {
+  font-size: 24px;
+  z-index: 10;
+  color: #333;
+}
+
+.slick-prev {
+  left: -30px;
+}
+
+.slick-next {
+  right: -30px;
+}
+
+/* Custom dots styling if you enable them */
+.slick-dots li button:before {
+  font-size: 10px;
+  color: #333;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #007bff;
+}
